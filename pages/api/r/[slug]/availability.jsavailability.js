@@ -145,6 +145,7 @@ export default async function handler(req, res) {
 
     return res.status(200).json({
       restaurant: restaurant.slug,
+      restaurant_name: restaurant.name,
       date,
       party,
       slot_minutes: slotMin,
